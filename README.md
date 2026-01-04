@@ -183,29 +183,30 @@ Examples
 ## 🚫 Forbidden Placeholders
 
 These placeholders do NOT exist and will reject the mod:
-{coins}
-{money}
-{xp}
-{exp}
-{level}
-{inventory}
-{items}
-{vip}
-{admin}
-{db}
-{time}
-{date}
+``{coins}``
+``{money}``
+``{xp}``
+``{exp}``
+``{level}``
+``{inventory}``
+``{items}``
+``{vip}``
+``{admin}``
+``{db}``
+``{time}``
+``{date}``
 
 ## 🚫 Forbidden Content
 
 Mods will be rejected if they contain:
-Links (http, https, t.me)
-Mentions (@username)
-Advertising
-NSFW / 18+ content
-Hate speech or insults
-Fake system messages
-Unknown placeholders
+
+``Links (http, https, t.me)``
+``Mentions (@username)``
+``Advertising``
+``NSFW / 18+ content``
+``Hate speech or insults``
+``Fake system messages``
+``Unknown placeholders``
 
 ## 🧱 Modder Template (Copy & Use)
 ```json
@@ -236,3 +237,95 @@ Unknown placeholders
 
 ## 📚 Example Mods
 ### 🎲 Fun / Entertainment
+```json
+{
+  "meta": {
+    "name": "fun_dice",
+    "version": "1.0.0",
+    "author": "example_user",
+    "description": "Dice fun commands"
+  },
+  "commands": [
+    {
+      "name": "dice",
+      "description": "Roll a dice",
+      "response": {
+        "type": "random",
+        "variants": [
+          "{user} rolled 🎲 {random:1-6}",
+          "Dice result: {random:1-6}"
+        ]
+      }
+    }
+  ]
+}
+```
+
+## 🧙 Roleplay
+```json
+{
+  "meta": {
+    "name": "rp_actions",
+    "version": "1.0.0",
+    "author": "rp_author",
+    "description": "Roleplay actions"
+  },
+  "commands": [
+    {
+      "name": "hug",
+      "description": "Hug someone",
+      "response": {
+        "type": "text",
+        "text": "{user} gives a warm hug 🤗"
+      }
+    }
+  ]
+}
+```
+
+##🏹 Text Mini-Game (Simulation)
+```json
+{
+  "meta": {
+    "name": "adventure_text",
+    "version": "1.0.0",
+    "author": "storyteller",
+    "description": "Text-based adventure simulation"
+  },
+  "commands": [
+    {
+      "name": "explore",
+      "description": "Explore an area",
+      "response": {
+        "type": "random",
+        "variants": [
+          "{user} explores a cave",
+          "{user} enters ancient ruins",
+          "{user} walks through a dark forest"
+        ]
+      }
+    }
+  ]
+}
+```
+
+##🔗 How to Install a Mod
+
+Create a .json file
+Upload it to GitHub
+Open the Raw file view
+Copy the URL
+In the telegram bot(@shyvana_lol_bot) chat, use:
+```bash
+/addmod <raw_github_url>
+```
+
+##✅ Final Notes
+
+JSON mods are designed to be:
+Safe
+Simple
+Creative
+Community-friendly
+If you are unsure whether something is allowed — assume it is not.
+Happy modding! 🚀
