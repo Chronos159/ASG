@@ -318,7 +318,7 @@ Open the Raw file view
 Copy the URL
 In the telegram bot(@shyvana_lol_bot) chat, use:
 ```bash
-/addmod <raw_github_url>
+/addmod https://raw.githubusercontent.com/your_github_username/your_repo/main/file_name.json
 ```
 
 ## ✅ Final Notes
