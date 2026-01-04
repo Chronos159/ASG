@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "name": "adventure_text",
+    "version": "0.0.1",
+    "author": "SANCHEZ4431",
+    "description": "Text-based adventure simulation"
+  },
+  "commands": [
+    {
+      "name": "explore",
+      "description": "Explore an area",
+      "response": {
+        "type": "random",
+        "variants": [
+          "{user} explores a cave",
+          "{user} enters ancient ruins",
+          "{user} walks through a dark forest"
+        ]
+      }
+    }
+  ]
+}
