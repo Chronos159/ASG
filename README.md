@@ -118,7 +118,7 @@ Command Structure
 ```
 
 Optional
-Minimum: 5 seconds\n
+Minimum: 5 seconds
 If omitted, `cooldown_default` is used
 
 ## ⚙️ Response Types
@@ -181,18 +181,20 @@ Examples
 ## 🚫 Forbidden Placeholders
 
 These placeholders do NOT exist and will reject the mod:
-``{coins}``
-``{money}``
-``{xp}``
-``{exp}``
-``{level}``
-``{inventory}``
-``{items}``
-``{vip}``
-``{admin}``
-``{db}``
-``{time}``
-``{date}``
+```json
+{coins}
+{money}
+{xp}
+{exp}
+{level}
+{inventory}
+{items}
+{vip}
+{admin}
+{db}
+{time}
+{date}
+```
 
 ## 🚫 Forbidden Content
 
