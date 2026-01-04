@@ -6,8 +6,6 @@ Welcome to the JSON Modding system.
 This document contains **everything in one place** that you need to create safe and compatible JSON mods for this bot.  
 You can copy this file **as-is** and save it as:
 
-JSON_MODDING_GUIDE.md
-
 ---
 
 ## 📌 Core Principles
