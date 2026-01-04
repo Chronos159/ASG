@@ -206,3 +206,33 @@ NSFW / 18+ content
 Hate speech or insults
 Fake system messages
 Unknown placeholders
+
+## 🧱 Modder Template (Copy & Use)
+```json
+{
+  "meta": {
+    "name": "my_first_mod",
+    "version": "1.0.0",
+    "author": "your_name",
+    "description": "Describe what your mod does",
+    "min_bot_version": "1.0"
+  },
+  "limits": {
+    "cooldown_default": 30
+  },
+  "commands": [
+    {
+      "name": "hello",
+      "description": "Say hello",
+      "cooldown": 10,
+      "response": {
+        "type": "text",
+        "text": "Hello, {user} 👋"
+      }
+    }
+  ]
+}
+```
+
+## 📚 Example Mods
+# 🎲 Fun / Entertainment
