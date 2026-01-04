@@ -235,4 +235,4 @@ Unknown placeholders
 ```
 
 ## 📚 Example Mods
-# 🎲 Fun / Entertainment
+### 🎲 Fun / Entertainment
