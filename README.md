@@ -119,6 +119,7 @@ Command Structure
 
 Optional
 Minimum: 5 seconds
+
 If omitted, `cooldown_default` is used
 
 ## ⚙️ Response Types
