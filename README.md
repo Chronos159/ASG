@@ -96,7 +96,7 @@ Every mod must follow this structure:
 }
 ```
 
-##commands — Command List
+## commands — Command List
 
 Rules:
 1. Maximum 5 commands per mod
@@ -114,7 +114,7 @@ Command Structure
 }
 ```
 
-##⏱ Cooldowns
+## ⏱ Cooldowns
 ```json
 "cooldown": 10
 ```
@@ -283,7 +283,7 @@ Mods will be rejected if they contain:
 }
 ```
 
-##🏹 Text Mini-Game (Simulation)
+## 🏹 Text Mini-Game (Simulation)
 ```json
 {
   "meta": {
@@ -309,7 +309,7 @@ Mods will be rejected if they contain:
 }
 ```
 
-##🔗 How to Install a Mod
+## 🔗 How to Install a Mod
 
 Create a .json file
 Upload it to GitHub
@@ -320,7 +320,7 @@ In the telegram bot(@shyvana_lol_bot) chat, use:
 /addmod <raw_github_url>
 ```
 
-##✅ Final Notes
+## ✅ Final Notes
 
 JSON mods are designed to be:
 Safe
