@@ -310,6 +310,125 @@ Mods will be rejected if they contain:
 }
 ```
 
+# 🔥 Flow System (Mod API v2)
+
+Flow allows you to build **complex scenarios and games**
+without writing code.
+---
+
+Limits:
+
+* max 30 nodes
+* one active flow per user
+* auto timeout
+---
+
+## 🧱 Flow Node Types
+### 🗨 say
+```json
+{
+  "type": "say",
+  "text": "You enter a dungeon",
+  "next": "next_node"
+}
+```
+---
+### ⏳ wait
+```json
+{
+  "type": "wait",
+  "seconds": 1,
+  "next": "next_node"
+}
+```
+Max wait: 5 seconds
+---
+### 🎲 random
+```json
+{
+  "type": "random",
+  "next": {
+    "a": "node_a",
+    "b": "node_b"
+  }
+}
+```
+---
+### 🛑 end
+
+```json
+{
+  "type": "end"
+}
+```
+---
+
+## 🔗 Flow Structure
+
+```json
+"flow": {
+  "start": "node_id",
+  "nodes": { ... }
+}
+```
+## 🧠 Flow Rules
+
+* No conditions
+* No loops
+* No variables
+* No user data access
+* No persistence
+
+---
+## 🧪 Example: Mini Game
+
+```json
+{
+  "meta": {
+    "name": "dungeon_game",
+    "version": "1.0.0",
+    "author": "modder",
+    "description": "Dungeon adventure"
+  },
+  "commands": [
+    {
+      "name": "dungeon",
+      "flow": {
+        "start": "intro",
+        "nodes": {
+          "intro": {
+            "type": "say",
+            "text": "You enter a dark dungeon",
+            "next": "event"
+          },
+          "event": {
+            "type": "random",
+            "next": {
+              "monster": "monster",
+              "treasure": "treasure"
+            }
+          },
+          "monster": {
+            "type": "say",
+            "text": "A monster attacks!",
+            "next": "end"
+          },
+          "treasure": {
+            "type": "say",
+            "text": "You found treasure!",
+            "next": "end"
+          },
+          "end": {
+            "type": "end"
+          }
+        }
+      }
+    }
+  ]
+}
+```
+---
+
 ## 🔗 How to Install a Mod
 
 Create a .json file
