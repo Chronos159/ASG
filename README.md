@@ -393,6 +393,10 @@ Max wait: 5 seconds
   "commands": [
     {
       "name": "dungeon",
+      "response": {
+        "type": "text",
+        "text": "Let's begin our dungeon adventure..."
+      },
       "flow": {
         "start": "intro",
         "nodes": {
